@@ -1,0 +1,19 @@
+# Entornos virtuales (donde se instalan librerías como selenium)
+venv/
+.venv/
+env/
+
+# Archivos de caché de Python (basura que genera el lenguaje automáticamente)
+__pycache__/
+*.py[cod]
+
+# Drivers de navegador (no necesitas subir el chromedriver, cada quien debe tener el suyo)
+chromedriver
+chromedriver.exe
+
+# Archivos del sistema operativo (basura de Windows o Mac)
+.DS_Store
+Thumbs.db
+
+# Logs o archivos de error
+*.log
