@@ -30,7 +30,7 @@ Este proyecto automatiza la extracción de datos de vehículos \*\*Mazda 3\*\* p
 
 \## 📊 Dataset
 
-El resultado es un archivo `datos\_kavak\_mazda3\_final.csv` con los registros obtenidos.
+El resultado es un archivo `mazda3.csv` con los registros obtenidos.
 
 
 
