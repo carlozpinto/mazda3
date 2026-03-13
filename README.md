@@ -1,40 +1,45 @@
-\# Mazda 3 Market Analysis - Kavak Scraper
+Mazda 3 Market Analysis - Data Science Portfolio
+Este proyecto consiste en un análisis integral del mercado de seminuevos Mazda 3 en México, utilizando datos extraídos de la plataforma Kavak. El objetivo es identificar tendencias de depreciación, jerarquías de precios por versión y detectar oportunidades de compra mediante técnicas de Ciencia de Datos.
+
+🛠 Tecnologías Utilizadas
+Python: Lenguaje principal de análisis.
+
+Selenium: Extracción y navegación web (Web Scraping).
+
+Pandas & NumPy: Procesamiento, limpieza y estructuración de datos.
+
+Matplotlib & Seaborn: Análisis Exploratorio de Datos (EDA) y visualización estadística.
+
+Git/GitHub: Control de versiones y gestión de repositorio.
+
+🚀 Flujo de Trabajo (Pipeline)
+Extracción (Scraping): Automatización mediante Selenium para la recolección de datos en tiempo real desde el portal de Kavak.
+
+Limpieza (Preprocessing): Normalización de tipos de datos, eliminación de duplicados y estructuración para análisis.
+
+Análisis Exploratorio (EDA):
+
+Correlación de variables: Uso de Mapas de Calor (Heatmaps) para cuantificar el impacto del año y kilometraje sobre el precio.
+
+Análisis de Depreciación: Visualización mediante Scatter plots y Boxplots para identificar comportamientos por versión.
+
+Detección de Anomalías: Identificación de oportunidades de mercado (valores atípicos en precio/año).
+
+📊 Hallazgos Principales
+El Año de fabricación es la variable con mayor correlación positiva con el precio (0.89).
+
+El Kilometraje tiene una relación negativa fuerte con el precio (-0.76).
+
+Identificación de ofertazos: Se detectaron unidades (ej. año 2020) con desviaciones de precio que permiten compras estratégicas por debajo del valor de mercado.
+
+📂 Estructura del Proyecto
+limpieza_datos.ipynb: Notebook de limpieza y preparación de datos.
+
+02_analisis_visual.ipynb: Notebook de análisis estadístico y gráficas.
+
+mazda3_limpio.csv: Dataset final procesado y listo para uso.
 
 
 
-Este proyecto automatiza la extracción de datos de vehículos \*\*Mazda 3\*\* publicados en el portal de Kavak México. El objetivo es consolidar un dataset estructurado para realizar análisis de mercado sobre precios y disponibilidad de seminuevos.
 
-
-
-\## 🛠 Tecnologías Utilizadas
-
-\- \*\*Python\*\*: Lenguaje base para la automatización.
-
-\- \*\*Selenium\*\*: Herramienta de navegación automatizada para manejar contenido dinámico.
-
-\- \*\*Pandas\*\*: Procesamiento y estructuración de datos en formato CSV.
-
-\- \*\*Chrome WebDriver\*\*: Motor de renderizado para la interacción web.
-
-
-
-\## 🚀 Cómo funciona
-
-1\. \*\*Navegación Dinámica\*\*: El script utiliza una estructura de bucle para iterar sobre las páginas del catálogo, modificando dinámicamente el parámetro `page` en la URL.
-
-2\. \*\*Extracción\*\*: Mediante la inyección de JavaScript en el DOM, se extraen campos clave: Modelo, Detalles (versión/año) y Precio.
-
-3\. \*\*Limpieza\*\*: Se eliminan duplicados y se normaliza el formato para asegurar un dataset limpio.
-
-
-
-\## 📊 Dataset
-
-El resultado es un archivo `mazda3.csv` con los registros obtenidos.
-
-
-
----
-
-\*Desarrollado como parte de un proyecto de automatización y análisis de datos.\*
-
+PD: La elección del modelo es muy simple, es un auto que me gusta mucho y me compraré uno eventualmente.
